@@ -1,0 +1,14 @@
+.grid-container {
+	align-items: center;
+	column-gap: 16px;
+	display:  grid;
+}
+
+#main {
+	background-color: lightgray;
+}
+
+#menu {
+	background-color: lightgray;
+	list-style-type: none;
+}
