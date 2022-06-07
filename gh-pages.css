@@ -1,5 +1,4 @@
 .grid-container {
-	align-items: center;
 	column-gap: 8px;
 	display:  grid;
 	grid-template-areas: "menu main main main";	  
@@ -14,10 +13,6 @@
 .menu {
 	height: auto;
 	width: auto;
-}
-	
-.menu-items {
-	background-color: Gray;
 }
 
 .main {
