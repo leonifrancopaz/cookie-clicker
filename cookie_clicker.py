@@ -43,7 +43,7 @@ def uncompress(compressed_save_data):
     Clicker's decoded (from Base64 format) and compressed save data paired
     with its appropriate metadata.
     """
-    metadata = json.loads(urllib.request.urlopen("https://leonifrancopaz.github.io/cookie-clicker/metadata.json").read().decode())
+    metadata = json.load(open("metadata.json", "rt))
     # Splitting and pairing ###################################################
     data = compressed_save_data.split("|")
     save = {}
