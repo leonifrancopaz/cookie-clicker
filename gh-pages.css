@@ -10,6 +10,7 @@ body {
 
 .grid-container > div {
 	background-color: LightGray;
+	border-radius: 12px;
 }
 
 .menu-items {
