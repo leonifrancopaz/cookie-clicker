@@ -10,21 +10,20 @@
     </py-env>
   </head>
   <body style="background-color: Gray;">
-    <label>Save code</label><br>
-    <input id="save-code" type="text" style="width: 25%;">
-    <py-script src="./cookie_clicker.py">
+     <py-script src="./cookie_clicker.py">
       from js import document
       from pyodide import create_proxy
       
       def _decodef():
         save_code = document.getElementById("save-code").value
         save_code = uncompress(decode(save_code))
-        document.getElementById("decoded-save-code").value = save_code
+        document.getElementById("decoded-save-code").value = "ayylmao"
       
       decodef = create_proxy(_decodef)
       document.getElementById("dcdbtn").addEventListener("click", decodef)
     </py-script>
-    <button id="dcdbtn">Decode</button><br><br>
+    <label>Save code</label><br>
+    <input id="save-code" type="text" style="width: 25%;"><button id="dcdbtn">Decode</button><br><br>
     <textarea id="decoded-save-code" style="width: 50%;"></textarea>
     <p id="test"></p>
     <py-script ssarc="cookieve-code" style="height: 512px; width: 50%"></textarea>
