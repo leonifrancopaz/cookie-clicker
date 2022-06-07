@@ -13,9 +13,12 @@ body {
 	border-radius: 12px;
 }
 
+.menu {
+	width: 256px;
+}
+	
 .menu-items {
-	list-style-type: none;
-	width: 128px;
+	background-color: Gray;
 }
 
 .main {
