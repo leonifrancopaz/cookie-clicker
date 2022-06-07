@@ -14,16 +14,17 @@
     <input id="save-code" type="text" style="width: 25%;">
     <py-script src="./cookie_clicker.py">
       from js import document
+      from pyodide import create_proxy
       
-      def decodef():
+      def _decodef():
         save_code = document.getElementById("save-code").value
-        PyScript.write("test", save_code, append=False)
         save_code = uncompress(decode(save_code))
-        document.getElementById("decoded-save-code").value = "ayylmao"
+        document.getElementById("decoded-save-code").value = save_code
+      
+      decodef = create_proxy(_decodef)
+      document.getElementById("dcdbtn").addEventListener("click", decodef)
     </py-script>
-    <py-button>
-      def on_click(event):
-        decodef()
+    <py-button id="dcdbtn>
     </py-button><br><br>
     <textarea id="decoded-save-code" style="width: 50%;"></textarea>
     <p id="test"></p>
