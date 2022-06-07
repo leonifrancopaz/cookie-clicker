@@ -7,12 +7,13 @@
 
 .grid-container > div {
 	background-color: LightGray;
+	border-color: Gray;
 	border-radius: 8px;
 }
 
 .menu {
-	height: 256px;
-	width: 256px;
+	height: auto;
+	width: auto;
 }
 	
 .menu-items {
