@@ -9,6 +9,7 @@
 	background-color: LightGray;
 }
 
-#menu {
+.grid-container > #menu {
 	list-style-type: none;
+	width: 64px;
 }
