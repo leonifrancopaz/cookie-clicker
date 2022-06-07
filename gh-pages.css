@@ -17,3 +17,7 @@ body {
 	list-style-type: none;
 	width: 128px;
 }
+
+.main {
+	padding: 10px;
+}
