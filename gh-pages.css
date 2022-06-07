@@ -2,10 +2,7 @@
 	align-items: center;
 	column-gap: 16px;
 	display:  grid;
-	grid-template-areas:
-		"menu main main main"
-		"main main main"
-		"main main main";	  
+	grid-template-areas: "menu main main main";	  
 }
 
 .grid-container > div {
