@@ -156,26 +156,3 @@ def compress(save_code):
 
     # Output ##################################################################
     return save_code
-
-
-if __name__ == "__main__":
-    # This bit is for testing purposes.
-    with open("test/Leoni's bakery.txt", "rt") as save_file:
-        # Original save file data.
-        save_code = save_file.read()
-
-        # Manipulated data.
-        decoded = decode(save_code)
-        uncompressed = uncompress(decoded)
-        compressed = compress(uncompressed)
-        encoded = encode(compressed)
-
-        # If any of these output "False" then something went wrong.
-        print(decoded == compressed)
-        print(save_code == encoded)
-
-        # Write output to text files for manual inspection.
-        open("test/decoded-Leoni's bakery.txt", "wt").write(decoded)
-        open("test/uncompressed-Leoni's bakery.txt", "wt").write(uncompressed)
-        open("test/compressed-Leoni's bakery.txt", "wt").write(compressed)
-        open("test/encoded-Leoni's bakery.txt", "wt").write(encoded)
