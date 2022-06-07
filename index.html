@@ -17,8 +17,8 @@
       
       def decodef():
         save_code = document.getElementById("save-code").value
-        save_code = uncompress(decode(save_code))
         PyScript.write("test", save_code, append=False)
+        save_code = uncompress(decode(save_code))
     </py-script>
     <py-button>
       def on_click(event):
