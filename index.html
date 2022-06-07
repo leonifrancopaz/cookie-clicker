@@ -18,13 +18,14 @@
       def decodef():
         save_code = document.getElementById("save-code").value
         save_code = uncompress(decode(save_code))
-        PyScript.write("decoded-save-code", save_code, append=False)
+        PyScript.write("test", save_code, append=False)
     </py-script>
     <py-button>
       def on_click(event):
         decodef()
     </py-button><br><br>
     <textarea id="decoded-save-code" style="width: 50%;"></textarea>
+    <p id="test"></p>
     <py-script ssarc="cookieve-code" style="height: 512px; width: 50%"></textarea>
   </body>
 </html>
