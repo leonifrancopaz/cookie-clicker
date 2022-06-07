@@ -7,7 +7,7 @@
 
 .grid-container > div {
 	background-color: LightGray;
-	border-color: Gray;
+	border: 2px Gray;
 	border-radius: 8px;
 }
 
