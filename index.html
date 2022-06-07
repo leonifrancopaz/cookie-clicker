@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <py-env>
       - paths:
@@ -14,7 +15,7 @@
     <label>Save code</label><br>
     <input id="save-code" type="text" style="width: 25%;">
     <button id="dcdbtn" type="submit" pys-onClick="decodef">Decode</button><br><br>
-    <textarea id="decoded-save-code" style="width: 50%;"></textarea>
+    <textarea id="decoded-save-code" style="resize: none; width: 50%;"></textarea>
     <p id="test"></p>
     <py-script ssarc="cookieve-code" style="height: 512px; width: 50%"></textarea>
   </body>
