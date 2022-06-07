@@ -2,13 +2,13 @@
 	align-items: center;
 	column-gap: 16px;
 	display:  grid;
+	grid-template-columns: auto auto;
 }
 
-#main {
-	background-color: lightgray;
+.grid-container > div {
+	background-color: LightGray;
 }
 
 #menu {
-	background-color: lightgray;
 	list-style-type: none;
 }
