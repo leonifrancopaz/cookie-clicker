@@ -10,11 +10,16 @@
     </py-env>
   </head>
   <body style="background-color: Gray;">
-    <py-script src="cookie_clicker.py"></py-script>
     <label>Save code</label><br>
     <input id="save-code" type="text" style="width: 25%;">
     <py-button>
-
+      import cookie_clicker
+      from js import document
+      save_code = document.getElementById("save-code").value
+      save_code = cookie_clicker.uncompress(cookie_clicker.decode(save_code))
+      
+      def on_click(event):
+        document.getElementById("decoded-save-code").value = save_code
     </py-button><br><br>
     <textarea id="decoded-save-code"></textarea>
     <py-script ssarc="cookieve-code" style="height: 512px; width: 50%"></textarea>
