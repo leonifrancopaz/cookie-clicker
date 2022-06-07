@@ -10,14 +10,11 @@
     </py-env>
   </head>
   <body style="background-color: Gray;">
-     <py-script src="./cookie_clicker.py">
-      from js import document
-      
-      def decodef():
-        #save_code = document.getElementById("save-code").value
-        #save_code = uncompress(decode(save_code))
-        document.getElementById("decoded-save-code").value = "ayylmao"
-      
+     <py-script src="cookie_clicker.py">
+       from js import document
+       
+       def decodef():
+         document.getElementById("decoded-save-code").value = "ayylmao"
     </py-script>
     <label>Save code</label><br>
     <input id="save-code" type="text" style="width: 25%;"><button id="dcdbtn" type="submit" pys-onClick="decodef">Decode</button><br><br>
