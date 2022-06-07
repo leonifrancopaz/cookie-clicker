@@ -12,12 +12,12 @@
   <body style="background-color: Gray;">
     <label>Save code</label><br>
     <input id="save-code" type="text" style="width: 25%;">
-    <py-script>
+    <py-script src="./cookie_clicker.py">
       from js import document
       
       def decodef():
         save_code = document.getElementById("save-code").value
-        save_code = cookie_clicker.uncompress(cookie_clicker.decode(save_code))
+        save_code = uncompress(decode(save_code))
         PyScript.write("decoded-save-code", save_code, append=False)
     </py-script>
     <py-button>
