@@ -12,13 +12,16 @@
   <body style="background-color: Gray;">
     <label>Save code</label><br>
     <input id="save-code" type="text" style="width: 25%;">
-    <py-button>
-      import cookie_clicker
-      from js import document
-      save_code = document.getElementById("save-code").value
-      save_code = cookie_clicker.uncompress(cookie_clicker.decode(save_code))
+    <py-script src="./cookie_clicker.py">
       
+    <py-script>
+    <py-button>
       def on_click(event):
+        from js import document
+      
+        save_code = document.getElementById("save-code").value
+        save_code = cookie_clicker.uncompress(cookie_clicker.decode(save_code))
+      
         console.log(save_code)
         document.getElementById("decoded-save-code").value = save_code
     </py-button><br><br>
