@@ -13,19 +13,18 @@
     <label>Save code</label><br>
     <input id="save-code" type="text" style="width: 25%;">
     <py-script src="./cookie_clicker.py">
+      from js import document
       
+      def decodef():
+        save_code = document.getElementById("save-code").value
+        save_code = cookie_clicker.uncompress(cookie_clicker.decode(save_code))
+        document.getElementById("decoded-save-code").value = save_code
     <py-script>
     <py-button>
       def on_click(event):
-        from js import document
-      
-        save_code = document.getElementById("save-code").value
-        save_code = cookie_clicker.uncompress(cookie_clicker.decode(save_code))
-      
-        console.log(save_code)
-        document.getElementById("decoded-save-code").value = save_code
+        decodef()
     </py-button><br><br>
-    <textarea id="decoded-save-code"></textarea>
+    <textarea id="decoded-save-code" style="width: 50%;"></textarea>
     <py-script ssarc="cookieve-code" style="height: 512px; width: 50%"></textarea>
   </body>
 </html>
