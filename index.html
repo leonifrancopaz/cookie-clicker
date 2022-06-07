@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="gh-pages.css"/>
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <py-env>
       - paths:
@@ -10,11 +11,21 @@
     </py-env>
     <title>Cookie Clicker JSON</title>
   </head>
-  <body style="background-color: LightGray;">
-    <py-script src="cookie_clicker_pages.py"></py-script>
-    <label>Save code</label><br>
-    <input id="save-code" type="text" style="width: 25%;">
-    <button id="dcdbtn" type="submit" pys-onClick="decodef">Decode</button><br><br>
-    <textarea id="decoded-save-code" style="height: 1024px; resize: none; width: 50%;"></textarea>
+  <body>
+    <div class="grid-container">
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">Decode and uncompress</a></li>
+          <li><a href="index.html">Compress and encode</a></li>
+        </ul>
+      </div>
+      <div id="main">
+        <py-script src="cookie_clicker_pages.py"></py-script>
+        <label>Save code</label><br>
+        <input id="save-code" type="text" style="width: 25%;">
+        <button id="dcdbtn" type="submit" pys-onClick="decodef">Decode</button><br><br>
+        <textarea id="decoded-save-code" style="height: 1024px; resize: none; width: 50%;"></textarea>
+      </div>
+    </div>
   </body>
 </html>
