@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Cookie Clicker JSON</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="gh-pages.css"/>
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
@@ -10,22 +11,21 @@
         - ./cookie_clicker.py
         - ./metadata.json
     </py-env>
-    <title>Cookie Clicker JSON</title>
   </head>
   <body>
     <div class="grid-container">
       <div class="menu">
-        <ul class="menu-items">
-          <li><button>Decode and uncompress</button></li>
-          <li><button>Compress and encode</button></li>
+        <ul>
+          <li><a href="" style="margin-bottom: 5px;">Decode and uncompress</a></li>
+          <li><a href="" style="margin-bottom: 5px;">Compress and encode</a></li>
         </ul>
       </div>
       <div class="main">
         <py-script src="cookie_clicker_pages.py"></py-script>
-        <label>Save code</label><br>
-        <input id="save-code" type="text" style="width: 25%;">
-        <button id="dcdbtn" type="submit" pys-onClick="decodef">Decode</button><br><br>
-        <textarea id="decoded-save-code" style="height: 1024px; resize: none; width: 512px;"></textarea>
+        <label id="input-label">Save code</label><br>
+        <input id="input" type="text">
+        <button id="transform-button" type="submit" pys-OnClick="du_trans_button">Decode</button><br><br>
+        <textarea id="output" style="height: 1024px; resize: none; width: 756px;"></textarea>
       </div>
     </div>
   </body>
