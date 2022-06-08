@@ -1,21 +1,60 @@
-.grid-container {
-	column-gap: 8px;
-	display:  grid;
-	grid-template-areas: "menu main main main";	  
-}
-
-.grid-container > div {
-	background-color: LightGray;
-	border-width: 4px;
-	border-color: Gray;
-	border-radius: 8px;
-}
-
 .menu {
-	height: 256px;
-	width: auto;
+	position: fixed;
+	overflow-x: hidden;
+	width: 256px;
+}
+
+.menu > ul {
+	list-style-type: none;
+	padding: 10px;
+}
+
+.menu > ul > li a {
+	border-color: Gray;
+	border-radius: 4px;
+	border-width: 2px;
+	color: Gray;
+	display: block;
+	text-align: center;
+	transition-duration: 0.5s;
+}
+
+.menu > ul > li a:hover {
+	background-color: Gray;
+	color: White;
 }
 
 .main {
+	border-color: Gray;
+	border-left-width: 2px;
+	margin-left: 256px;
 	padding: 10px;
+}
+
+#input, #output {
+	border-color: Gray;
+	border-width: 2px;
+	border-radius: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+	width: 25%;
+}
+
+#transform-button {
+	border-color: Gray;
+	border-width: 2px;
+	border-radius: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition-duration: 0.5s;
+}
+
+#transform-button:hover {
+	background-color: Gray;
+	color: White;
+	border-color: Gray;
+	border-width: 2px;
+	border-radius: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
